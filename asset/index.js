@@ -1,5 +1,5 @@
 
-let a = Math.floor((Math.random() * 10) + 1);;
+let a = Math.floor((Math.random() * 10) + 1);
 let btn = document.getElementById('btn');
 btn.addEventListener('click', function(){
     let num = parseInt(document.getElementById('number').value);

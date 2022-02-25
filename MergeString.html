@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let string1 = prompt("Nhập chuỗi kí tự thứ 1:"),
+            string2 = prompt("Nhập chuỗi kí tự thứ 2:");
+        let mergeString = "";
+
+        function merge2String(string1, string2) {
+            if (string1.length >= string2.length) {
+
+                for (let i = 0; i <= string1.length; i++) {
+                    mergeString = mergeString + string1.charAt(i) + string2.charAt(i);
+                }
+            } else {
+                for (let i = 0; i <= string2.length; i++) {
+                    mergeString = mergeString + string1.charAt(i) + string2.charAt(i);
+                }
+            }
+            return mergeString;
+        }
+        document.write("merge 2 string: " + merge2String(string1, string2))
+
+    
+    </script>
+</body>
+</html>
